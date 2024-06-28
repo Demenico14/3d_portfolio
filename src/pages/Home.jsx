@@ -5,14 +5,10 @@ import Island from '../models/island';
 import Sky from '../models/Sky';
 import Plane from '../models/Plane';
 import Bird from "../models/Bird";
+import Homeinfo from "../components/Homeinfo";
 
 // Commenting out the div correctly
-{/* 
-<div className='absolute top-28 left-0 right-0 z-10 flex
-      items-center justify-center'>
-        HEHEHE
-</div> 
-*/}
+
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -54,6 +50,17 @@ const Home = () => {
 
   return (
     <section className='w-full h-screen relative'>
+
+
+        {
+    <div className='absolute top-28 left-0 right-0 z-10 flex
+          items-center justify-center'>
+          {currentStage && <Homeinfo currentStage = {currentStage} /> } 
+    </div> 
+    }
+
+
+
       <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
@@ -69,7 +76,9 @@ const Home = () => {
             intensity={1}
           />
           <Bird />
-          <Sky />
+          <Sky
+          isRotating={isRotating}
+           />
           <Island
             position={islandPosition}
             scale={islandScale}
