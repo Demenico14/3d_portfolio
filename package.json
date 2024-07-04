@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@react-spring/three": "^9.7.3",
     "@react-three/drei": "^9.107.0",
     "@react-three/fiber": "^8.16.8",
@@ -22,12 +23,15 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
+    "envify": "^4.1.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
+    "terser": "^5.31.1",
+    "uglifyify": "^5.0.0",
     "vite": "^5.3.1"
   }
 }
