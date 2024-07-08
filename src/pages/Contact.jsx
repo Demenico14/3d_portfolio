@@ -66,6 +66,7 @@ const Contact = () => {
         <h1 className='head-text'>Get in Touch</h1>
         <form
           className='w-full flex flex-col gap-7 mt-14'
+          name="contact" netlify
           onSubmit={handleSubmit}
           ref={formRef}
         >
