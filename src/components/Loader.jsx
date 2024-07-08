@@ -1,8 +1,9 @@
+// Loader.jsx
 import { Html } from "@react-three/drei";
 import { useState, useEffect } from "react";
 
 const Loader = () => {
-  const [dotCount, setDotCount] = useState(3); // Number of dots
+  const [dotCount] = useState(3); // Number of dots
   const [activeDot, setActiveDot] = useState(0); // Active dot index
 
   // Function to rotate active dot
