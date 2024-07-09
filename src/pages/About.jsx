@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React from 'react';
-import { skills } from '../constants';
+import { skills, Certifications } from '../constants';
 
 const About = () => {
   return (
@@ -33,6 +33,29 @@ const About = () => {
           ))}
         </div>
       </div>
+
+      <div className='py-10 flex flex-col'>
+  <h3 className='subhead-text'>My Certifications</h3>
+  <div className='mt-16 grid grid-cols-2 gap-12'>
+    {Certifications.map((certification, index) => (
+      <div key={certification.name} className={`flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+        <img
+          src={certification.imageUrl}
+          alt={certification.name}
+          className='w-20 h-20 rounded-xl mr-4 object-contain'
+        />
+        <div className='text-left ml-4'>
+          <h4>{certification.name}</h4>
+          <p>{certification.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+      
     </section>
   );
 };

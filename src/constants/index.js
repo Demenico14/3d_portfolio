@@ -10,7 +10,7 @@ import {
     html,
     javascript,
     linkedin,
-    nodejs,
+    blob,
     pricewise,
     react,
     snapgram,
@@ -23,7 +23,10 @@ import {
     netlify,
     laravel,
     mysql,
-    postgresql
+    postgresql,
+    fortinet,
+    huawei
+
 
 } from "../assets/icons";
 
@@ -176,5 +179,50 @@ export const projects = [
         name: 'AI Summarizer Application',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+    }
+];
+
+export const Certifications = [
+    {
+        imageUrl: blob,
+        theme: 'btn-back-red',
+        name: 'PCAP: Programming Essentials In Python 2022',
+        description: 'Certification in Programming Essentials in Python 2022.',
+        link: '',
+    },
+    {
+        imageUrl: fortinet,
+        theme: 'btn-back-green',
+        name: 'Fortinet NSE 1 Network Security Associate 2022',
+        description: 'Certification as Fortinet NSE 1 Network Security Associate 2022.',
+        link: '',
+    },
+    {
+        imageUrl:  fortinet,
+        theme: 'btn-back-blue',
+        name: 'Fortinet NSE 2 Network Security Associate 2022',
+        description: 'Certification as Fortinet NSE 2 Network Security Associate 2022.',
+        link: '',
+    },
+    {
+        imageUrl:  fortinet,
+        theme: 'btn-back-pink',
+        name: 'Fortinet NSE 3 Network Security Associate 2022',
+        description: 'Certification as Fortinet NSE 3 Network Security Associate 2022.',
+        link: '',
+    },
+    {
+        imageUrl:     huawei,
+        theme: 'btn-back-black',
+        name: 'Huawei HCIA-Datacom V1.0 2024',
+        description: 'Certification in Huawei HCIA-Datacom V1.0 2024.',
+        link: '',
+    },
+    {
+        imageUrl:     huawei,
+        theme: 'btn-back-yellow',
+        name: 'Huawei HC IA-IOT V3.0 2024',
+        description: 'Certification in Huawei HC IA-IOT V3.0 2024.',
+        link: '',
     }
 ];

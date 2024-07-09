@@ -25,8 +25,9 @@ import laravel from './laravel.svg';
 import netlify from './netlify.svg';
 import c from './c.svg';
 import postgresql from './postgresql.svg'
-
-
+import blob from './blob.svg'
+import fortinet from './fortinet.svg'
+import huawei from './huawei.svg'
 
 
 export {
@@ -56,5 +57,8 @@ export {
     netlify,
     laravel,
     mysql,
-    postgresql
+    postgresql,
+    blob,
+    fortinet,
+    huawei
 }
