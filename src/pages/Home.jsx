@@ -7,12 +7,30 @@ import Plane from '../models/Plane';
 import Bird from "../models/Bird";
 import Homeinfo from "../components/Homeinfo";
 
+import Love from '../assets/Love.mp3'
+import { soundoff, soundon } from "../assets/icons";
+
 // Commenting out the div correctly
 
 
 const Home = () => {
+
+  const audioRef = useRef( new Audio(Love));
+  audioRef.current.volume = 0.2;
+  audioRef.current.loop = true;
   const [isRotating, setIsRotating] = useState(false);
-  const [currentStage,setCurrentStage] = useState(1)
+  const [currentStage,setCurrentStage] = useState(1);
+  const [isPlayingMusic, setisPlayingMusic] = useState(false);
+
+  useEffect(() => {
+    if (isPlayingMusic) {
+      audioRef.current.play();
+    }
+
+    return () => {
+      audioRef.current.pause();
+    };
+  }, [isPlayingMusic]);
 
   const adjustIslandForScreenSize = () => {
     let screenScale;
@@ -95,6 +113,15 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
+
+      <div className='absolute bottom-2 left-2'>
+        <img
+          src={!isPlayingMusic ? soundoff : soundon}
+          alt='jukebox'
+          onClick={() => setisPlayingMusic(!isPlayingMusic)}
+          className='w-10 h-10 cursor-pointer object-contain'
+        />
+      </div>
     </section>
   );
 };
