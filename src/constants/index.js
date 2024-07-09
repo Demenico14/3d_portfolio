@@ -204,7 +204,7 @@ export const Certifications = [
         name: 'Fortinet NSE 2 Network Security Associate 2022',
         description: 'Certification as Fortinet NSE 2 Network Security Associate .',
         link: '',
-        date: "March 2023 - April 2022",
+        date: "March 2022 - April 2022",
     },
     {
         icon:fortine,
@@ -212,7 +212,7 @@ export const Certifications = [
         name: 'Fortinet NSE 3 Network Security Associate 2022',
         description: 'Certification as Fortinet NSE 3 Network Security Associate .',
         link: '',
-        date: "March 2020 - April 2021",
+        date: "March 2022 - April 2022",
     },
     {
         icon:huawe,
