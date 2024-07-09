@@ -36,9 +36,9 @@ const About = () => {
 
       <div className='py-10 flex flex-col'>
   <h3 className='subhead-text'>My Certifications</h3>
-  <div className='mt-16 grid grid-cols-2 gap-12'>
-    {Certifications.map((certification, index) => (
-      <div key={certification.name} className={`flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+  <div className='mt-16 grid grid-cols-1 md:grid-cols-2 gap-12'>
+    {Certifications.map((certification) => (
+      <div key={certification.name} className='flex items-center'>
         <img
           src={certification.imageUrl}
           alt={certification.name}
@@ -52,6 +52,7 @@ const About = () => {
     ))}
   </div>
 </div>
+
 
 
 
