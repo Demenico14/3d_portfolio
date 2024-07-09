@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-key */
-import React from 'react';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import CTA from '../components/CTA'
 import { skills, Certifications } from '../constants';
 
 const About = () => {
@@ -34,26 +36,58 @@ const About = () => {
         </div>
       </div>
 
-      <div className='py-10 flex flex-col'>
-  <h3 className='subhead-text'>My Certifications</h3>
-  <div className='mt-16 grid grid-cols-1 md:grid-cols-2 gap-12'>
-    {Certifications.map((certification) => (
-      <div key={certification.name} className='flex items-center'>
-        <img
-          src={certification.imageUrl}
-          alt={certification.name}
-          className='w-20 h-20 rounded-xl mr-4 object-contain'
-        />
-        <div className='text-left ml-4'>
-          <h4>{certification.name}</h4>
-          <p>{certification.description}</p>
+      <div className='py-16'>
+        <h3 className='subhead-text'>Certfications</h3>
+        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+          <p>
+            I've Done Many Certifications , leveling up my skills and
+            teaming up with smart people. Here's the rundown:
+          </p>
         </div>
-      </div>
-    ))}
-  </div>
-</div>
+
+        <div className='mt-12 flex'>
+          <VerticalTimeline>
+            {Certifications.map((Certification) => (
+              <VerticalTimelineElement
+              key={Certification.name}
+              date={Certification.date}
+              icon={
+                <div className='flex-justify-center items-center w-full h-full  '>
+                  <img
+                    src={Certification.icon}
+                    alt= {Certification.name}
+                    className='w-[110%] h-[101%] object-contain'
+                  />
+                </div>
+              } 
+              iconStyle={{ background: Certification.iconBg}}
+              contentStyle={{
+                borderBottom: "8px",
+                borderStyle: "solid",
+                borderBottomColor: Certification.iconBg,
+                boxShadow: "none",
+              }}
+              >
 
 
+                <div>
+                  <h3 className='text-black text-xl font-poppins font-semibold'>
+                    {Certification.name}
+                  </h3>
+                  <p className='text-black-500/50 font-medium font-base ' style={{margin:0}}>
+                    {Certification.description}
+                  </p>
+                </div>
+                
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
+        </div>
+        </div>
+
+        <hr className='border-slate-200' />
+
+        <CTA />
 
 
       

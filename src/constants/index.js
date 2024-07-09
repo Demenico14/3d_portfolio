@@ -1,4 +1,4 @@
-
+import { pyinst, huawe, fortine } from "../assets/images";
 import {
     car,
     contact,
@@ -10,7 +10,7 @@ import {
     html,
     javascript,
     linkedin,
-    blob,
+    
     pricewise,
     react,
     snapgram,
@@ -24,8 +24,7 @@ import {
     laravel,
     mysql,
     postgresql,
-    fortinet,
-    huawei
+  
 
 
 } from "../assets/icons";
@@ -184,45 +183,51 @@ export const projects = [
 
 export const Certifications = [
     {
-        imageUrl: blob,
-        theme: 'btn-back-red',
+        icon: pyinst,
+        iconBg: "#accbe1",
         name: 'PCAP: Programming Essentials In Python 2022',
-        description: 'Certification in Programming Essentials in Python 2022.',
+        description: 'Certification in Programming Essentials in Python .',
         link: '',
+        date: "Agust 2022 - September 2022",
     },
     {
-        imageUrl: fortinet,
-        theme: 'btn-back-green',
+        icon: fortine,
+        iconBg: "#fbc3bc",
         name: 'Fortinet NSE 1 Network Security Associate 2022',
-        description: 'Certification as Fortinet NSE 1 Network Security Associate 2022.',
+        description: 'Certification as Fortinet NSE 1 Network Security Associate .',
         link: '',
+        date: "March 2022 - April 2022",
     },
     {
-        imageUrl:  fortinet,
-        theme: 'btn-back-blue',
+        icon:  fortine,
+        iconBg: "#b7e4c7",
         name: 'Fortinet NSE 2 Network Security Associate 2022',
-        description: 'Certification as Fortinet NSE 2 Network Security Associate 2022.',
+        description: 'Certification as Fortinet NSE 2 Network Security Associate .',
         link: '',
+        date: "March 2023 - April 2022",
     },
     {
-        imageUrl:  fortinet,
-        theme: 'btn-back-pink',
+        icon:fortine,
+        iconBg: "#c7d4ff",
         name: 'Fortinet NSE 3 Network Security Associate 2022',
-        description: 'Certification as Fortinet NSE 3 Network Security Associate 2022.',
+        description: 'Certification as Fortinet NSE 3 Network Security Associate .',
         link: '',
+        date: "March 2020 - April 2021",
     },
     {
-        imageUrl:     huawei,
-        theme: 'btn-back-black',
+        icon:huawe,
+        iconBg: "black",
         name: 'Huawei HCIA-Datacom V1.0 2024',
-        description: 'Certification in Huawei HCIA-Datacom V1.0 2024.',
+        description: 'Certification in Huawei HCIA-Datacom V1.0.',
         link: '',
+        date: "March 2024 - April 2024",
     },
     {
-        imageUrl:     huawei,
-        theme: 'btn-back-yellow',
+        icon:huawe,
+        iconBg: "yellow",
         name: 'Huawei HC IA-IOT V3.0 2024',
-        description: 'Certification in Huawei HC IA-IOT V3.0 2024.',
+        description: 'Certification in Huawei HC IA-IOT V3.0 .',
         link: '',
+        date: "March 2024 - April 2024",
     }
 ];
