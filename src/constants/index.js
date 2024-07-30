@@ -145,6 +145,14 @@ export const projects = [
         description: 'Developed a web application for Travel Bookings, facilitating destination searches and finding cheap accomodation.',
         link: 'https://github.com/Demenico14/Travel-Website',
     },
+    {
+        iconUrl: snapgram,
+        theme: 'btn-back-pink',
+        name: 'CHATGPT Clone',
+        description: 'Built a complete clone of Clone',
+        link: 'https://campus-guide-tan.vercel.app/'
+    },
+
    
 ];
 
