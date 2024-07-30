@@ -149,7 +149,7 @@ export const projects = [
         iconUrl: snapgram,
         theme: 'btn-back-pink',
         name: 'CHATGPT Clone',
-        description: 'Built a complete clone of Clone',
+        description: 'Built a complete clone of Chat-GPT',
         link: 'https://campus-guide-tan.vercel.app/'
     },
 
