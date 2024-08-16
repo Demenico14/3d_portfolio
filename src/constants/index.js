@@ -146,7 +146,7 @@ export const projects = [
         link: 'https://github.com/Demenico14/Travel-Website',
     },
     {
-        iconUrl: snapgram,
+        iconUrl: summiz,
         theme: 'btn-back-pink',
         name: 'Quackspace',
         description: 'QuackSpace is a Zoom clone application designed for seamless video conferencing',
