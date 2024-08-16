@@ -148,9 +148,9 @@ export const projects = [
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'CHATGPT Clone',
-        description: 'Built a complete clone of Chat-GPT',
-        link: 'https://campus-guide-tan.vercel.app/'
+        name: 'Quackspace',
+        description: 'QuackSpace is a Zoom clone application designed for seamless video conferencing',
+        link: 'https://quackspace-sigma.vercel.app/'
     },
 
    
