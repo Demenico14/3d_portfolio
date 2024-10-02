@@ -152,6 +152,13 @@ export const projects = [
         description: 'QuackSpace is a Zoom clone application designed for seamless video conferencing',
         link: 'https://quackspace-sigma.vercel.app/'
     },
+    {
+        iconUrl: pricewise,
+        theme: 'btn-back-pink',
+        name: 'Lulu Guest Lodge',
+        description: 'It is a Website for a  Guest Lodge in Victoria . It has been designed to be user-friendly, and easy to navigate. With booking functionality' ,
+        link: 'https://www.luluguestlodge.co.zw'
+    },
 
    
 ];
